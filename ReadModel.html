@@ -14,18 +14,14 @@ permalink: /ReadModel/
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/5.0.0/normalize.min.css">
   <link rel='stylesheet' href='https://cdnjs.cloudflare.com/ajax/libs/github-markdown-css/3.0.1/github-markdown.min.css'>
   <link rel="stylesheet" href="./../stylesheets/style.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/github-fork-ribbon-css/0.2.3/gh-fork-ribbon.min.css">
 </head>
 
-<body>s
-  <div id="description" class="markdown-body">
-    Click on the canvas to create a NURBS curve and hit <kbd>Enter</kbd> to save and start a new one!
-  </div>
-  <div>
-    <canvas class="rhino3dm" id="canvas" width="500" height="500"></canvas>
-  </div>
-  <div style="margin:auto; width:100; display:block; padding:10">
-    <button onclick="download3dm()">Save to 3dm</button>
-  </div>
+<body>
+  <div id="container">
+    <div id="canvas"><canvas width="958" height="642" style="width: 958px; height: 642px;"></canvas></div>
+</div>
+  <script src='./../javascripts/three.min.js'></script>
   <script type="text/javascript" src="./../javascripts/resources/OrbitControls.js"></script>
  <script src='./../javascripts/rhino3dm.js'></script>
  <script src="./../javascripts/read3dm.js"></script>
