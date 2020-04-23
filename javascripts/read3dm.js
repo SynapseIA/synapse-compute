@@ -1,5 +1,5 @@
 
-            let fetchPromise = fetch('./../data/mesh.3dm');
+            let fetchPromise = fetch('./../data/hello_mesh.3dm');
 
             rhino3dm().then(async m => {
                 console.log('Loaded rhino3dm.');
